@@ -17,9 +17,11 @@ $(function(){
 
 	$('.articles a').mouseenter(function(){
 		$(this).find('.text').addClass('show');
+		$(this).find('.article-img').removeClass('show');
 	});
 	$('.articles a').mouseleave(function(){
-		$(this).find('.text').removeClass('show');
+		$(this).find('.text').removeClass('show')
+		$(this).find('.article-img').addClass('show');
 	});
 	
 	$(window).scroll(function(){
