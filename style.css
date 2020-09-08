@@ -3,9 +3,21 @@ body {
 	overflow-x: hidden;
 	position: relative;
 }
+h1,h2,h3,h4,h5,h6,p {line-height: 30px;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Bellota Text', 'Arial', sans-serif;}
+h1 {font-size: 30pt;}
+h2 {font-size: 27pt;}
+h3 {font-size: 22pt;}
+h4 {font-size: 18pt;}
+h5 {font-size: 16pt;}
+h6 {font-size: 14pt;}
+
+p {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 14pt;
+}
 
 nav {
-	/* border-bottom: 1px solid #444; */
 	height: 76px;
 	position: fixed;
 	transition: background-color .25s ease-in;
@@ -15,26 +27,12 @@ nav {
 
 nav .nav-container {
 	display: flex;
-
 	z-index: 100;
 }
 
 nav a {
 	color: black;
 }
-
-/* nav .nav-logo {
-	padding-top: 15px;
-	padding-left: 25px;
-	padding-bottom: 10px;
-	width: 20%;
-}
-
-.nav-logo a {
-	display: inline-block;
-	font-family: "Poiret One", sans-serif;
-	font-size: 18pt;
-} */
 
 .nav-logo a span {
 	font-size: 20pt;
@@ -46,9 +44,10 @@ nav a {
 ul.nav-menu {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: center;
+	margin: 0 auto;
 	padding-right: 25px;
-	width: 80%;
+	/* width: 80%; */
 }
 ul.nav-menu li {
 	text-align: center;
@@ -94,8 +93,6 @@ ul.nav-menu li a:hover {
 header {
 	position: relative;
 	background-color: rgba(250,250,250,.5);
-	/* height: calc(100vh - 76px); */
-	/* min-height: 500px; */
 	padding: 35px 0;
 	z-index: 5;
 }
@@ -130,7 +127,6 @@ header .header-box {
 .text-slider p {
 	font-family: "Bellota Text", sans-serif;
 	font-size: 14pt;
-	font-style: italic;
 	/* font-weight: bold; */
 	letter-spacing: 1px;
 	line-height: 40px;
@@ -141,10 +137,9 @@ header .header-box {
 	text-align: center;
 }
 .call-box p {
-	background-color: #9cdffd;
-	background-color: #d1edfa;
+	background-color: #0d5273;
 	border: 1px solid #777;
-	color: #353535;
+	color: white;
 	display: inline-block;
 	font-family: "Bellota Text", sans-serif;
 	font-size: 17pt;
@@ -215,7 +210,6 @@ section.cases {
 .case h3 {
 	color: #99caf8;
 	font-size: 17pt;
-	/* font-style: italic; */
 }
 .case-specs {
 	margin: 0 auto;
@@ -230,7 +224,6 @@ section.cases {
 	color: #21FA90; 
 	font-size: 18pt;
 	font-style: italic;
-	/* padding-top: 15px; */
 }
 .savings-br {display:none;}
 .more-cases {
@@ -279,7 +272,7 @@ section.cases {
 	font-size: 15pt;
 	font-weight: bold;
 	text-align: center;
-	transition: all .3 5s;
+	transition: all .35s;
 }
 .article-content {
 	margin-top: 15px;
@@ -313,6 +306,107 @@ section.cases {
 }
 
 
+
+/*       SERVICES  ------  */
+
+.subpage-header-box {
+	height: 30vh;
+}
+.subpage-header-box .subpage-title {
+	font-size: 34pt;
+	letter-spacing: 2px;
+	padding-top: 40px;
+	text-shadow: 1px 1px 1px #ddd;
+}
+
+#services .top-section,
+#services .middle-section {
+	padding: 40px 0;
+	max-width: 70vw;
+	margin: 0 auto;
+}
+@media (max-width: 800px) {
+	#services .top-section,
+	#services .middle-section {
+		max-width: 85vw;
+	}
+}
+@media (max-width: 500px) {
+	#services .top-section,
+	#services .middle-section {
+		max-width: 90vw;
+	}
+}
+
+#services .top-section p {
+	font-weight: bold;
+	line-height: 30px;
+	text-align: justify;
+}
+#services .bullets {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+#services .bullets .service-bullet {
+	font-size: 13pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+#services .banner {
+	background-color: #0d5273;
+	color: white;
+	font-weight: bold;
+	padding: 25px 0;
+	text-align: center;
+}
+#services .banner h6 {
+	letter-spacing: 1px;
+	line-height: 35px;
+}
+#services .banner p {
+	line-height: 30px;
+	letter-spacing: 1px;
+	padding-top: 15px;
+}
+
+#services .middle-section p {
+	text-align: justify;
+}
+#services .middle-section .bullets {
+	padding: 25px 0;
+	line-height: 35px;
+	text-align: center;
+}
+.em-line {
+	border-bottom: 1px solid #777;
+	line-height: 0;
+	margin: 0 auto;
+	padding: 0 0 10px;
+	width: 100px;
+}
+.middle-section .bullets .guarantee {
+	padding-top: 10px;
+}
+.bottom-section {
+	padding-bottom: 40px;
+}
+.aa-box {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #ddd;
+	text-align: center;
+	padding: 20px;
+}
+.aa-title {
+	font-weight: bold;
+	font-size: 15pt;
+	text-align: center;
+}
+
+
+/* 		FOOTER   -------- */
 
 footer {
 	background-color: #3a3a3a;
